@@ -1,0 +1,4 @@
+# Local-only: screenshots, video tooling and output
+screenshots/
+video/
+node_modules/

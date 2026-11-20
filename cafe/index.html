@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Harbour Bean Café | Coffee & Brunch in Steveston, Richmond BC</title>
+  <meta name="description" content="Harbour Bean Café: small-batch coffee, fresh pastries and weekend brunch steps from the Steveston waterfront in Richmond, BC.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+  <script src="assets/tw.js"></script>
+</head>
+<body class="bg-cream text-harbour-dark font-sans antialiased">
+  <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-50 focus:bg-white focus:px-4 focus:py-2 focus:rounded">Skip to content</a>
+
+  <header class="sticky top-0 z-40 bg-cream/95 backdrop-blur border-b border-harbour/10">
+    <nav class="relative max-w-6xl mx-auto px-4 h-16 flex items-center justify-between" aria-label="Main">
+      <a href="index.html" class="font-display text-2xl font-semibold text-harbour">Harbour Bean<span class="text-copper">.</span></a>
+      <button id="nav-toggle" class="md:hidden p-2 -mr-2 rounded focus-visible:outline focus-visible:outline-2 focus-visible:outline-copper" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+      <ul id="nav-menu" class="hidden flex flex-col absolute top-16 inset-x-0 bg-cream border-b border-harbour/10 px-4 pb-4 gap-1 md:flex md:flex-row md:static md:items-center md:bg-transparent md:border-0 md:p-0 md:gap-8 text-sm font-medium">
+        <li><a href="index.html" aria-current="page" class="block py-2 text-copper">Home</a></li>
+        <li><a href="menu.html" class="block py-2 hover:text-copper">Menu</a></li>
+        <li><a href="gallery.html" class="block py-2 hover:text-copper">Gallery</a></li>
+        <li><a href="contact.html" class="block py-2 hover:text-copper">Contact</a></li>
+        <li><a href="contact.html#reserve" class="mt-2 md:mt-0 inline-block bg-copper text-white px-5 py-2.5 rounded-full hover:bg-harbour transition">Book a table</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="relative min-h-[78vh] flex items-end">
+      <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=1800&q=70" alt="Sunlit café interior with wooden tables and hanging plants" class="absolute inset-0 w-full h-full object-cover" fetchpriority="high">
+      <div class="absolute inset-0 bg-gradient-to-t from-harbour-dark/90 via-harbour-dark/50 to-harbour-dark/10"></div>
+      <div class="relative max-w-6xl mx-auto px-4 pb-16 md:pb-24 text-cream w-full">
+        <p class="uppercase tracking-[0.25em] text-xs md:text-sm text-copper-light mb-4">Steveston Village · Richmond, BC</p>
+        <h1 class="font-display text-5xl md:text-7xl leading-[1.05] max-w-3xl">Slow coffee,<br>salt air, good mornings.</h1>
+        <p class="mt-6 max-w-xl text-lg text-cream/90">Small-batch roasts, pastries baked before sunrise and a weekend brunch worth the walk along the boardwalk.</p>
+        <div class="mt-8 flex flex-wrap gap-4">
+          <a href="menu.html" class="bg-copper text-white px-7 py-3.5 rounded-full font-medium hover:bg-white hover:text-harbour transition">See the menu</a>
+          <a href="contact.html#reserve" class="border border-cream/70 px-7 py-3.5 rounded-full font-medium hover:bg-cream hover:text-harbour transition">Reserve a table</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Category strip -->
+    <nav aria-label="Menu categories" class="bg-harbour text-cream">
+      <ul class="max-w-6xl mx-auto px-4 py-4 flex flex-wrap justify-center gap-x-8 gap-y-2 text-sm tracking-wide">
+        <li><a href="menu.html#coffee" class="hover:text-copper-light">Espresso bar</a></li>
+        <li aria-hidden="true" class="text-copper-light">·</li>
+        <li><a href="menu.html#tea" class="hover:text-copper-light">Tea & more</a></li>
+        <li aria-hidden="true" class="text-copper-light">·</li>
+        <li><a href="menu.html#bakery" class="hover:text-copper-light">Bakery</a></li>
+        <li aria-hidden="true" class="text-copper-light">·</li>
+        <li><a href="menu.html#brunch" class="hover:text-copper-light">Weekend brunch</a></li>
+      </ul>
+    </nav>
+
+    <!-- About -->
+    <section class="max-w-6xl mx-auto px-4 py-20 md:py-28 grid md:grid-cols-2 gap-12 items-center">
+      <div class="relative">
+        <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=1000&q=70" alt="Barista pouring hot water over a pour-over coffee filter" class="rounded-3xl w-full aspect-[4/5] object-cover" loading="lazy">
+        <div class="absolute -bottom-6 -right-2 md:-right-6 bg-copper text-white rounded-2xl px-6 py-4 shadow-lg">
+          <p class="font-display text-3xl">Since 2019</p>
+          <p class="text-sm text-white/90">Roasting by the river</p>
+        </div>
+      </div>
+      <div>
+        <p class="uppercase tracking-[0.2em] text-xs text-copper font-semibold mb-3">Our story</p>
+        <h2 class="font-display text-4xl md:text-5xl leading-tight">A neighbourhood café that takes its time.</h2>
+        <p class="mt-6 text-lg leading-relaxed text-harbour-dark/80">Harbour Bean started as a coffee cart outside the cannery docks. Today we're a twenty-seat café with the same idea: source beans from small farms, roast them in tiny batches, and serve every cup like it's for a regular.</p>
+        <p class="mt-4 text-lg leading-relaxed text-harbour-dark/80">Our pastry case is filled each morning by our in-house baker, and on weekends the kitchen turns out brunch plates built around Fraser Valley produce.</p>
+        <dl class="mt-10 grid grid-cols-3 gap-6 border-t border-harbour/15 pt-8">
+          <div><dt class="text-sm text-harbour-dark/70">Origins</dt><dd class="font-display text-3xl text-harbour">6</dd></div>
+          <div><dt class="text-sm text-harbour-dark/70">Baked daily</dt><dd class="font-display text-3xl text-harbour">14</dd></div>
+          <div><dt class="text-sm text-harbour-dark/70">Seats</dt><dd class="font-display text-3xl text-harbour">20</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- Featured -->
+    <section class="bg-white py-20 md:py-28">
+      <div class="max-w-6xl mx-auto px-4">
+        <div class="flex flex-wrap items-end justify-between gap-4 mb-12">
+          <div>
+            <p class="uppercase tracking-[0.2em] text-xs text-copper font-semibold mb-3">Regulars' favourites</p>
+            <h2 class="font-display text-4xl md:text-5xl">Featured this season</h2>
+          </div>
+          <a href="menu.html" class="font-medium text-harbour underline underline-offset-4 decoration-copper hover:text-copper">Full menu →</a>
+        </div>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <article class="group">
+            <div class="overflow-hidden rounded-2xl"><img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=70" alt="Latte with leaf-shaped foam art in a white cup" class="w-full aspect-[4/3] object-cover group-hover:scale-105 transition duration-500" loading="lazy"></div>
+            <div class="mt-5 flex justify-between gap-4"><h3 class="font-display text-2xl">Honey Lavender Latte</h3><p class="font-semibold text-copper">$6.25</p></div>
+            <p class="mt-2 text-harbour-dark/75">Double shot, steamed oat milk and local wildflower honey with a whisper of lavender.</p>
+          </article>
+          <article class="group">
+            <div class="overflow-hidden rounded-2xl"><img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=800&q=70" alt="Golden croissants piled on a wooden board" class="w-full aspect-[4/3] object-cover group-hover:scale-105 transition duration-500" loading="lazy"></div>
+            <div class="mt-5 flex justify-between gap-4"><h3 class="font-display text-2xl">Sea-Salt Butter Croissant</h3><p class="font-semibold text-copper">$4.50</p></div>
+            <p class="mt-2 text-harbour-dark/75">Three-day laminated dough finished with flaky salt. Usually gone by 11.</p>
+          </article>
+          <article class="group">
+            <div class="overflow-hidden rounded-2xl"><img src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?auto=format&fit=crop&w=800&q=70" alt="Brunch plate with toast, eggs and fresh greens" class="w-full aspect-[4/3] object-cover group-hover:scale-105 transition duration-500" loading="lazy"></div>
+            <div class="mt-5 flex justify-between gap-4"><h3 class="font-display text-2xl">Dockside Brunch Plate</h3><p class="font-semibold text-copper">$17.00</p></div>
+            <p class="mt-2 text-harbour-dark/75">Two soft eggs, sourdough, smoked salmon, pickled shallot and greens. Weekends only.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hours + visit -->
+    <section class="max-w-6xl mx-auto px-4 py-20 md:py-28 grid md:grid-cols-2 gap-10">
+      <div class="bg-harbour text-cream rounded-3xl p-8 md:p-12">
+        <h2 class="font-display text-3xl md:text-4xl">Opening hours</h2>
+        <dl class="mt-8 space-y-4 text-lg">
+          <div class="flex justify-between border-b border-cream/20 pb-3"><dt>Monday – Friday</dt><dd>7:00 am – 5:00 pm</dd></div>
+          <div class="flex justify-between border-b border-cream/20 pb-3"><dt>Saturday</dt><dd>8:00 am – 4:00 pm</dd></div>
+          <div class="flex justify-between"><dt>Sunday</dt><dd>8:00 am – 3:00 pm</dd></div>
+        </dl>
+        <p class="mt-8 text-cream/80">Brunch is served Saturday and Sunday until 2 pm.</p>
+      </div>
+      <div class="flex flex-col justify-center">
+        <h2 class="font-display text-3xl md:text-4xl">Find us by the water</h2>
+        <p class="mt-4 text-lg text-harbour-dark/80">We're a two-minute walk from the Steveston fishermen's wharf. Grab a window seat or take your cup out to the boardwalk.</p>
+        <address class="not-italic mt-6 text-lg">120 Wharfside Lane<br>Richmond, BC</address>
+        <div class="mt-8 flex flex-wrap gap-4">
+          <a href="contact.html" class="bg-harbour text-cream px-7 py-3.5 rounded-full font-medium hover:bg-copper transition">Directions & map</a>
+          <a href="tel:+16045550142" class="border border-harbour px-7 py-3.5 rounded-full font-medium hover:bg-harbour hover:text-cream transition">(604) 555-0142</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-harbour-dark text-cream/85">
+    <div class="max-w-6xl mx-auto px-4 py-14 grid gap-10 md:grid-cols-3">
+      <div>
+        <p class="font-display text-2xl text-cream">Harbour Bean<span class="text-copper-light">.</span></p>
+        <p class="mt-3 text-sm">Small-batch coffee & weekend brunch in Steveston Village.</p>
+      </div>
+      <div class="text-sm space-y-1">
+        <p class="font-semibold text-cream mb-2">Visit</p>
+        <address class="not-italic">120 Wharfside Lane, Richmond, BC</address>
+        <p><a href="tel:+16045550142" class="hover:text-copper-light">(604) 555-0142</a></p>
+        <p>Mon–Fri 7–5 · Sat 8–4 · Sun 8–3</p>
+      </div>
+      <div>
+        <p class="font-semibold text-cream mb-3 text-sm">Follow along</p>
+        <ul class="flex gap-3">
+          <li><a href="#" aria-label="Instagram (demo link)" class="grid place-items-center w-10 h-10 rounded-full border border-cream/30 hover:bg-copper hover:border-copper transition"><svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a></li>
+          <li><a href="#" aria-label="Facebook (demo link)" class="grid place-items-center w-10 h-10 rounded-full border border-cream/30 hover:bg-copper hover:border-copper transition"><svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 8h3V4h-3a4 4 0 0 0-4 4v2H8v4h2v8h4v-8h3l1-4h-4V8z"/></svg></a></li>
+          <li><a href="#" aria-label="TikTok (demo link)" class="grid place-items-center w-10 h-10 rounded-full border border-cream/30 hover:bg-copper hover:border-copper transition"><svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 3c.3 2.2 1.7 3.8 4 4v3.2a7.5 7.5 0 0 1-4-1.2V15a6 6 0 1 1-6-6v3.3A2.7 2.7 0 1 0 12.7 15V3H16z"/></svg></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-cream/10 py-5 text-center text-xs text-cream/70">© <span data-year></span> Harbour Bean Café (fictional business) · Concept project by Kevin L</div>
+  </footer>
+
+  <script src="assets/main.js"></script>
+</body>
+</html>
